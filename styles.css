@@ -1,0 +1,218 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a2342; /* Dark blue background color */
+    color: #fff; /* White text color */
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Slightly larger top and bottom padding */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px; /* Wider spacing for navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 1.2rem; /* Slightly larger font size for navigation items */
+}
+
+nav ul li a:hover {
+    color: #ff6b6b; /* Hover color */
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.background-image {
+    /* Style for the background image */
+    background-image: url('your-photo.jpg');
+    background-size: cover;
+    background-position: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.6; /* Adjust the opacity as needed */
+}
+
+/* Social Links styles */
+.social-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-link {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-link.instagram {
+    background-color: #405DE6; /* Instagram color */
+    color: #fff;
+}
+
+.social-link.facebook {
+    background-color: #1877F2; /* Facebook color */
+    color: #fff;
+}
+
+.social-link.twitter {
+    background-color: #1DA1F2; /* Twitter color */
+    color: #fff;
+}
+
+/* Common box styles */
+.box {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Options styles */
+.options {
+    display: flex;
+    justify-content: space-between; /* Wider spacing between options */
+    padding: 40px 0;
+    background-color: #f4f4f4; /* Light gray background color */
+    flex-wrap: wrap; /* Allow options to wrap to the next line on smaller screens */
+}
+
+.option {
+    flex: 1; /* Make options equally spaced */
+    text-align: center;
+    margin: 0 10px; /* Add some horizontal margin to each option */
+}
+
+.option:hover {
+    transform: translateY(-10px);
+}
+
+.option h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333; /* Dark text color */
+}
+
+.option p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555; /* Slightly lighter text color */
+}
+
+/* Events and Releases styles */
+.events-and-releases {
+    display: flex;
+    justify-content: space-between; /* Wider spacing between events/releases */
+    padding: 40px 0;
+    background-color: #f4f4f4; /* Light gray background color */
+    flex-wrap: wrap; /* Allow events/releases to wrap to the next line on smaller screens */
+}
+
+.event, .release {
+    flex: 1; /* Make events/releases equally spaced */
+    text-align: center;
+    margin: 0 10px; /* Add some horizontal margin to each event/release */
+}
+
+.event:hover, .release:hover {
+    transform: translateY(-10px);
+}
+
+/* Additional Styles and Animations */
+
+/* Style 1 */
+.new-style-1 {
+    background-color: #ff6b6b; /* Red background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.new-style-1:hover {
+    background-color: #ff4444; /* Lighter red on hover */
+}
+
+/* Style 2 */
+.new-style-2 {
+    background-color: #4caf50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.new-style-2:hover {
+    background-color: #388e3c; /* Lighter green on hover */
+}
+
+/* Style 3 */
+.new-style-3 {
+    background-color: #ff9800; /* Orange background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.new-style-3:hover {
+    background-color: #f57c00; /* Lighter orange on hover */
+}
+
+/* Add 27 more styles here */
+
+/* Animation 1 */
+@keyframes animation1 {
+    /* Define animation properties for the first animation */
+}
+
+/* Animation 2 */
+@keyframes animation2 {
+    /* Define animation properties for the second animation */
+}
+
+/* Animation 3 */
+@keyframes animation3 {
+    /* Define animation properties for the third animation */
+}
+
+/* Add 27 more animations here */

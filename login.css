@@ -1,0 +1,177 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #ece4e4; /* Red header background */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    animation: fadeInDown 1s;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    animation: fadeInLeft 1s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f44336; /* Red link color */
+    font-weight: bold;
+    transition: color 0.3s;
+    animation: fadeInRight 1s;
+}
+
+nav ul li a:hover {
+    color: #ff5722; /* Orange on hover */
+}
+
+/* Container for login form */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+    animation: fadeInUp 1s; /* Animation for container */
+}
+
+/* Login form header */
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f44336; /* Red heading color */
+}
+
+/* Form fields and buttons */
+form input[type="email"],
+form input[type="password"],
+form button[type="submit"],
+button#googleLogin,
+button#facebookLogin {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    background-color: transparent;
+    transition: border-color 0.3s;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #f44336; /* Red border on focus */
+}
+
+form button[type="submit"],
+button#googleLogin,
+button#facebookLogin {
+    background-color: #f44336; /* Red submit button */
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button[type="submit"]:hover,
+button#googleLogin:hover,
+button#facebookLogin:hover {
+    background-color: #ff5722; /* Orange on hover */
+}
+
+/* Password visibility toggle button */
+#togglePassword {
+    background-color: transparent;
+    border: none;
+    color: #f44336; /* Red color */
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#togglePassword:hover {
+    color: #ff5722; /* Orange on hover */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

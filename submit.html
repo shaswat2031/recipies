@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Your Recipe</title>
+    <link rel="stylesheet" href="submit.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="explore-recipes.html">Recipes</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Top Rated</a></li>
+                <li><a href="favouraties.html">My Favorites</a></li>
+                <li><a href="submit.html">Submit a Recipe</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section class="recipe-submission">
+        <h1>Submit Your Recipe</h1>
+        <form action="submit.php" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="recipe-title">Recipe Title:</label>
+                <input type="text" id="recipe-title" name="recipe-title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="instructions">How to Make:</label>
+                <textarea id="instructions" name="instructions" rows="6" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="recipe-image">Recipe Image:</label>
+                <input type="file" id="recipe-image" name="recipe-image" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Recipe</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Recipe Sharing Platform</p>
+    </footer>
+</body>
+</html>
